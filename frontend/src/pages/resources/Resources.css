@@ -1,0 +1,196 @@
+.resource-page {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  min-height: calc(100vh - 76px);
+}
+
+.resource-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.resource-subtitle {
+  font-size: 1.1rem;
+  color: #6c757d;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Card Styles */
+.resource-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.resource-icon {
+  font-size: 2rem;
+  color: #3498db;
+  margin-bottom: 1rem;
+}
+
+.resource-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+/* Blog Styles */
+.blog-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.blog-category {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  background: rgba(52, 152, 219, 0.1);
+  color: #3498db;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.blog-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.blog-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.blog-date {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.blog-read-more {
+  background: none;
+  border: none;
+  color: #3498db;
+  font-weight: 500;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* FAQ Styles */
+.faq-section .accordion-button {
+  font-weight: 500;
+  color: #2c3e50;
+  padding: 1.25rem;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+  background-color: rgba(52, 152, 219, 0.05);
+  color: #3498db;
+}
+
+.faq-section .accordion-body {
+  padding: 1.5rem;
+  color: #495057;
+  line-height: 1.6;
+}
+
+/* Resume Tips Styles */
+.resume-guide .accordion-button {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.tips-sidebar {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.mistakes-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.mistakes-list li {
+  padding: 0.5rem 0;
+  color: #495057;
+  display: flex;
+  align-items: center;
+}
+
+.mistakes-list li::before {
+  content: "×";
+  color: #dc3545;
+  font-weight: bold;
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.pro-tip {
+  background: rgba(52, 152, 219, 0.1);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.pro-tip h5 {
+  color: #3498db;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Support Button */
+.support-button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.5rem auto;
+  transition: all 0.3s ease;
+}
+
+.support-button:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .resource-title {
+    font-size: 2rem;
+  }
+
+  .resource-page {
+    padding: 3rem 0;
+  }
+
+  .blog-title {
+    font-size: 1.25rem;
+  }
+} 
