@@ -168,21 +168,6 @@ export default function Register() {
                   )}
                 </Button>
 
-                <div className="auth-divider">
-                  <span>or sign up with</span>
-                </div>
-
-                <div className="social-buttons">
-                  <Button className="social-button">
-                    <i className="bi bi-google"></i>
-                    Google
-                  </Button>
-                  <Button className="social-button">
-                    <i className="bi bi-github"></i>
-                    GitHub
-                  </Button>
-                </div>
-
                 <div className="auth-footer">
                   Already have an account?{' '}
                   <Link to="/login" className="auth-link">
