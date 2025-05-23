@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button, Row, Col, Card, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import 'bootstrap-icons/font/bootstrap-icons.css'; // Make sure this is installed
+import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../context/AuthContext';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import './Home.css';
 
 export default function Home() {
+  const { user } = useContext(AuthContext);
+  const navigate = useNavigate();
+
+  const handleGetStarted = () => {
+    if (user) {
+      navigate('/dashboard');
+    } else {
+      navigate('/register');
+    }
+  };
+
   return (
     <>
       {/* Hero Section */}
@@ -16,8 +28,7 @@ export default function Home() {
               Choose from professional templates, customize easily, and download instantly.
             </p>
             <Button 
-              as={Link} 
-              to="/register" 
+              onClick={handleGetStarted}
               size="lg" 
               variant="light" 
               className="hero-button"
@@ -80,3 +91,4 @@ export default function Home() {
     </>
   );
 }
+
